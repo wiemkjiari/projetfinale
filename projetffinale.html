@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ssss.css">
+    <title>Resto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<body>
+    <!--header-->
+    <!--section navbar-->
+<header>
+    <img src="https://thumbs.dreamstime.com/z/fourchette-et-couteau-roses-2244023.jpg" width="40" height="60" alt="">
+    <a href="#" class="logo"><span>R</span>esto</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#apropos" onclick="toggleMenu();">about us</a></li>
+        <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+        <li><a href="#expert" onclick="toggleMenu();">Expert</a></li>
+        <li><a href="#temoignage" onclick="toggleMenu();">Temoignage</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        <a href="#" class="btn-reserve"onclick="toggleMenu();">Reservation</a>
+    </ul>
+</header>
+<!--section a propos de nous-->
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2>N ' ésiter pas de nous vésitez</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="#" class="btn1">Notre Menu</a>
+        <a href="#" class="btn2">Reservation</a>
+    </div>
+</section>
+<!--carosell-->
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte"><span>A</span> Propos De Nous</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="col50">
+            <div class="img">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.restaurantinteriordesign.eu/wp-content/uploads/2020/08/Gatserelia-Design-The-Amazing-Vienna-AI-Restaurant-5-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="http://www.cogneesol.com/blog/wp-content/uploads/2016/03/Restaurant-accounting.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://img.freepik.com/vecteurs-libre/format-horizontal-menu-restaurant-numerique_23-2148655475.jpg?size=626&ext=jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Pizza.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--section menu-->
+<section class="menu" id="menu">
+    <div class="titre">
+        <h2 class="titre-texte"><span>M</span>enu</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+                           <h1>14$</h1>
+            <div class="imbox">
+                <img src="pasta.jpg" alt="">
+                 
+            </div>
+            <div class="text">
+                <h3>pasta</h3>
+            </div>
+            <div class="btnc">
+
+            <button type="button" class="btn btn-danger" id="btnplus">+</button>
+            <input type="text" size="4" value="0" class="input">
+            <button type="button" class="btn btn-danger" id="btnmoins" width=3 heigth=3>-</button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart-fill"
+                    viewBox="0 0 16 16" id="heart">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+                </div>
+
+        </div>
+        <div class="box">
+            <h1>12$</h1>
+            <div class="imbox">
+                <img src="burguer.jpg" alt="">
+            
+            </div>
+
+            <div class="text">
+                <h3>boeufburguer</h3>
+            </div>
+            <div class="btnc">
+            
+                <button type="button" class="btn btn-danger" id="btnplus">+</button>
+                <input type="text" size="4" value="0" class="input">
+                <button type="button" class="btn btn-danger" id="btnmoins" width=3 heigth=3>-</button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart-fill"
+                    viewBox="0 0 16 16" id="heart">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+            </div>
+
+        </div>
+        <div class="box">
+            <h1>11$</h1>
+            <div class="imbox">
+                <img src="salade-cesar.jpg" alt="">
+                   
+
+            </div>
+            <div class="text">
+                <h3>salade cezar</h3>
+            </div>
+        <div class="btnc">
+        
+            <button type="button" class="btn btn-danger" id="btnplus">+</button>
+            <input type="text" size="4" value="0" class="input">
+            <button type="button" class="btn btn-danger" id="btnmoins" width=3 heigth=3>-</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart-fill"
+                viewBox="0 0 16 16" id="heart">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+            </svg>
+        </div>
+
+        </div>
+        <div class="box">
+            <h1>25$</h1>
+            <div class="imbox">
+                <img src="lasagne.jpg" alt="">
+                  
+              
+            </div>
+            <div class="text">
+                <h3>lasagne</h3>
+            </div>
+    <div class="btnc">
+    
+        <button type="button" class="btn btn-danger" id="btnplus">+</button>
+        <input type="text" size="4" value="0" class="input">
+        <button type="button" class="btn btn-danger" id="btnmoins" width=3 heigth=3>-</button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart-fill"
+            viewBox="0 0 16 16" id="heart">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+        </svg>
+    </div>
+
+        </div>
+        <div class="box">
+            <h1>40$</h1>
+            <div class="imbox">
+                <img src="boeuf.jpg" alt="">
+                    
+             
+            </div>
+            <div class="text">
+                <h3>boeuf grillé</h3>
+            </div>
+        <div class="btnc">
+        
+<div class="btnc">
+
+    <button type="button" class="btn btn-danger" id="btnplus">+</button>
+    <input type="text" size="4" value="0" class="input">
+    <button type="button" class="btn btn-danger" id="btnmoins" width=3 heigth=3>-</button>
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart-fill"
+        viewBox="0 0 16 16" id="heart">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+    </svg>
+</div>
+        </div>
+
+            </div>
+        <div class="box">
+            <h1>17$</h1>
+            <div class="imbox">
+                <img src="spaguetti.jpg" alt="">
+                  
+            </div>
+            <div class="text">
+                <h3>spaguetti</h3>
+            </div>
+            <div class="btnc">
+            
+                <button type="button" class="btn btn-danger" id="btnplus">+</button>
+                <input type="text" size="4" value="0" class="input">
+                <button type="button" class="btn btn-danger" id="btnmoins" width=3 heigth=3>-</button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart-fill"
+                    viewBox="0 0 16 16" id="heart">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+            </div>
+
+        </div>
+        <div class="box">
+            <h1>27$</h1>
+            <div class="imbox">
+                <img src="scalope.jpg" alt="">
+                    
+            </div>
+            <div class="text">
+                <h3>Scalope panne</h3>
+            </div>
+            <div class="btnc">
+            
+                <button type="button" class="btn btn-danger" id="btnplus">+</button>
+                <input type="text" size="4" value="0" class="input">
+                <button type="button" class="btn btn-danger" id="btnmoins" width=3 heigth=3>-</button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart-fill"
+                    viewBox="0 0 16 16" id="heart">
+                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+            </div>
+
+        </div>
+        
+    </div>
+
+ </div>
+ <div class="titre">
+    <a href="#" class="btn1">Voir Plus</a>
+ </div>
+</section>
+<section class="expert" id="expert">
+    <div class="titre">
+        <h2 class="titre-texte">Nos <span>E</span>xperts</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="https://www.espace-concours.fr/drupal/files/chef_cuisinier_metier.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Franck leroi</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="https://st.depositphotos.com/1518767/4292/i/950/depositphotos_42924791-stock-photo-concentrated-male-chef-garnishing-food.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Paul Bocuse</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="https://www.cordonbleu.edu/Files/MediaFile/45830.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Philippe Rochat.</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="https://static.timesofisrael.com/fr/uploads/2019/09/XVMc9a60756-cfc2-11e9-9e91-31a91fdbe8f3.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3>Joël Robuchon</h3>
+            </div>
+        </div>
+    </div>
+ </div>
+</section>
+ <section class="temoignage" id="temoignage">
+    <div class="titre blanc">
+        <h2 class="titre-texte">Que Disent Nos <span>C</span>lients</h2>
+        <p> Il faut s'inscrire pour nous contacter </p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="file:///C:/Users/user/AppData/Local/Temp/Rar$EXa4700.12910/Resto/images/t1.jpeg" alt="">
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <h3>Franck leroi</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="file:///C:/Users/user/AppData/Local/Temp/Rar$EXa4700.12910/Resto/images/t2.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <h3>edward soku</h3>
+            </div>
+        </div>
+        
+           
+            
+ </section>
+<section class="contact" id="contact">
+    <div class="titre noir">
+        <h2 class="titre-text"><span>C</span>ontact</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+    </div>
+    <div class="contactform">
+        <h3>Envoyer un message</h3>
+        <div class="inputboite">
+          <input type="text" class="form-control" id="name" placeholder="name">
+          <label for="floatingInput">Name</label>
+          <span id="messageForName"></span>
+
+        </div>
+        <div class="inputboite">
+           <input type="email" class="form-control" id="email" placeholder="name@example.com">
+           <label for="floatingInput">Email address</label>
+           <span id="messageForEmail"></span>
+        </div>
+        <div class="inputboite">
+            <input type="password" class="form-control" id="password" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+            <span id="messageForPassword"></span>
+        <div class="inputboite">
+            <textarea placeholder="message"></textarea>
+        </div>
+        <div class="inputboite">
+            <input type="submit" value="envoyer">
+        </div>
+    </div>
+</section>
+
+ <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header =document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0 );
+     });
+
+  
+ </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+    <script src="pp.js"></script>
+</body>
+</html>
